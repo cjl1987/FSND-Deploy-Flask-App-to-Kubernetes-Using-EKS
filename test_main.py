@@ -24,7 +24,7 @@ def client():
 
 def test_health(client):
     response = client.get('/')
-    assert response.status_code == 200      #on purpose changed to 400  (Change back to 200!!)
+    assert response.status_code == 200      #on purpose changed to 400  (Change back to 200!)
     assert response.json == 'Healthy'
 
 
